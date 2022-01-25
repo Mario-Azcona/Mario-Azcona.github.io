@@ -28,7 +28,7 @@
 
         function error(err) {
             console.warn('ERROR(' + err.code + '): ' + err.message);
-            alert("error");
+            x.innerHTML = 'ERROR(' + err.code + '): ' + err.message;
         };
 
         target = {
