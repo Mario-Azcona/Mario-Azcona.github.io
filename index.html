@@ -6,10 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json">
+    <script src="html5-qrcode.min.js"></script>
     <title>Emotional Films</title>
 </head>
 
 <body>
+    <div style="width: 500px" id="reader"></div>
+    <div>
+        <p id="address">Address</p>
+    </div>
+
+    <script>
+        function onScanSuccess(decodedText, decodedResult) {
+            // Handle on success condition with the decoded text or result.
+            //console.log(`Scan result: ${decodedText}`, decodedResult);
+            // ...
+            var x = document.getElementById("address");
+            x.innerHTML = decodedResult;
+            alert(decodedResult);
+
+            html5QrcodeScanner.clear();
+            // ^ this will stop the scanner (video feed) and clear the scan area.
+        }
+
+        function onScanError(errorMessage) {
+            console.log('Scan error');
+        }
+
+        var html5QrcodeScanner = new Html5QrcodeScanner(
+            "reader", { fps: 10, qrbox: 250 });
+
+        html5QrcodeScanner.render(onScanSuccess,onScanError);
+    </script>
+
     <div>
         <p id="coordinates">Coordinates</p>
     </div>
@@ -44,6 +73,19 @@
         };
 
         const watchId = navigator.geolocation.getCurrentPosition(success, error, options);
+
+        function onScanSuccess(decodedText, decodedResult) {
+            // Handle on success condition with the decoded text or result.
+            console.log(`Scan result: ${decodedText}`, decodedResult);
+        }
+
+        function onScanError(errorMessage) {
+            // handle on error condition, with error message
+        }
+
+        var html5QrcodeScanner = new Html5QrcodeScanner(
+            "reader", { fps: 10, qrbox: 250 });
+        html5QrcodeScanner.render(onScanSuccess, onScanError);
     </script>
 
 </body>
