@@ -12,85 +12,34 @@
 
 <body>
     <div id="qr-reader" style="width:500px"></div>
-    <div id="qr-reader-results"></div>
+    <div id="result">Please scan a valid QR code</div>
+
+    <script src="qrScanner.js"></script>
+
+    <script src="coordinates.js"></script>
 
     <script>
-        function docReady(fn) {
-            // see if DOM is already available
-            if (document.readyState === "complete" || document.readyState === "interactive") {
-                // call on next available tick
-                setTimeout(fn, 1);
-            } else {
-                document.addEventListener("DOMContentLoaded", fn);
-            }
-        }
+        var dataSent = false;
+        function trySend() {
+            if (!dataSent && randomFloat !== null && ipAddress !== null && port !== null && latitude !== null && longitude !== null) {
+                try {
+                    let socket = new WebSocket(`ws://${ipAddress}:${port}`);
 
-        docReady(function () {
-            var resultContainer = document.getElementById('qr-reader-results');
-            var lastResult, countResults = 0;
-
-            var html5QrcodeScanner = new Html5QrcodeScanner(
-                "qr-reader", { fps: 10, qrbox: 250 });
-
-            function onScanSuccess(decodedText, decodedResult) {
-                if (decodedText !== lastResult) {
-                    ++countResults;
-                    lastResult = decodedText;
-                    console.log(`Scan result = ${decodedText}`, decodedResult);
-
-                    resultContainer.innerHTML += `<div>${decodedText}</div>`;
-
-                    // Optional: To close the QR code scannign after the result is found
-                    html5QrcodeScanner.clear();
+                    socket.onopen = function (e) {
+                        socket.send(`${randomFloat} ${latitude},${longitude}`);
+                        dataSent = true;
+                        socket.close();
+                    };
+                    socket.onerror = function (error) {
+                        return;
+                    };
+                } catch (err) {
+                    console.warn('ERROR(' + err.code + '): ' + err.message);
                 }
             }
-
-            // Optional callback for error, can be ignored.
-            function onScanError(qrCodeError) {
-                // This callback would be called in case of qr code scan error or setup error.
-                // You can avoid this callback completely, as it can be very verbose in nature.
-            }
-
-            html5QrcodeScanner.render(onScanSuccess, onScanError);
-        });
-    </script>
-
-    <div>
-        <p id="coordinates">Coordinates</p>
-    </div>
-
-    <script>
-        var x = document.getElementById("coordinates");
-
-        var id, target, option;
-        var count = 0;
-
-        function success(pos) {
-            var crd = pos.coords;
-
-            x.innerHTML = "Count: " + count + "<br>Latitude: " + crd.latitude +
-                "<br>Longitude: " + crd.longitude;
-        };
-
-        function error(err) {
-            console.warn('ERROR(' + err.code + '): ' + err.message);
-            x.innerHTML = 'ERROR(' + err.code + '): ' + err.message;
-        };
-
-        target = {
-            latitude: 0,
-            longitude: 0,
         }
-
-        options = {
-            enableHighAccuracy: false,
-            timeout: 5000,
-            maximumAge: 0
-        };
-
-        const watchId = navigator.geolocation.watchPosition(success, error, options);
+        window.setInterval(trySend, 100);
     </script>
-
 </body>
 
 </html>
