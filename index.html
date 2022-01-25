@@ -11,32 +11,48 @@
 </head>
 
 <body>
-    <div style="width: 500px" id="reader"></div>
-    <div>
-        <p id="address">Address</p>
-    </div>
+    <div id="qr-reader" style="width:500px"></div>
+    <div id="qr-reader-results"></div>
 
     <script>
-        function onScanSuccess(decodedText, decodedResult) {
-            // Handle on success condition with the decoded text or result.
-            //console.log(`Scan result: ${decodedText}`, decodedResult);
-            // ...
-            var x = document.getElementById("address");
-            x.innerHTML = decodedResult;
-            alert(decodedResult);
-
-            html5QrcodeScanner.clear();
-            // ^ this will stop the scanner (video feed) and clear the scan area.
+        function docReady(fn) {
+            // see if DOM is already available
+            if (document.readyState === "complete" || document.readyState === "interactive") {
+                // call on next available tick
+                setTimeout(fn, 1);
+            } else {
+                document.addEventListener("DOMContentLoaded", fn);
+            }
         }
 
-        function onScanError(errorMessage) {
-            console.log('Scan error');
-        }
+        docReady(function () {
+            var resultContainer = document.getElementById('qr-reader-results');
+            var lastResult, countResults = 0;
 
-        var html5QrcodeScanner = new Html5QrcodeScanner(
-            "reader", { fps: 10, qrbox: 250 });
+            var html5QrcodeScanner = new Html5QrcodeScanner(
+                "qr-reader", { fps: 10, qrbox: 250 });
 
-        html5QrcodeScanner.render(onScanSuccess,onScanError);
+            function onScanSuccess(decodedText, decodedResult) {
+                if (decodedText !== lastResult) {
+                    ++countResults;
+                    lastResult = decodedText;
+                    console.log(`Scan result = ${decodedText}`, decodedResult);
+
+                    resultContainer.innerHTML += `<div>${decodedText}</div>`;
+
+                    // Optional: To close the QR code scannign after the result is found
+                    html5QrcodeScanner.clear();
+                }
+            }
+
+            // Optional callback for error, can be ignored.
+            function onScanError(qrCodeError) {
+                // This callback would be called in case of qr code scan error or setup error.
+                // You can avoid this callback completely, as it can be very verbose in nature.
+            }
+
+            html5QrcodeScanner.render(onScanSuccess, onScanError);
+        });
     </script>
 
     <div>
@@ -72,20 +88,7 @@
             maximumAge: 0
         };
 
-        const watchId = navigator.geolocation.getCurrentPosition(success, error, options);
-
-        function onScanSuccess(decodedText, decodedResult) {
-            // Handle on success condition with the decoded text or result.
-            console.log(`Scan result: ${decodedText}`, decodedResult);
-        }
-
-        function onScanError(errorMessage) {
-            // handle on error condition, with error message
-        }
-
-        var html5QrcodeScanner = new Html5QrcodeScanner(
-            "reader", { fps: 10, qrbox: 250 });
-        html5QrcodeScanner.render(onScanSuccess, onScanError);
+        const watchId = navigator.geolocation.watchPosition(success, error, options);
     </script>
 
 </body>
