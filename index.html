@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Films</title>
+</head>
+
+<body>
+    <div>
+        <p id="coordinates">Coordinates</p>
+    </div>
+
+    <script>
+        var x = document.getElementById("coordinates");
+
+        var id, target, option;
+        var count = 0;
+
+        function success(pos) {
+            var crd = pos.coords;
+
+            x.innerHTML = "Count: " + count + "<br>Latitude: " + crd.latitude +
+                "<br>Longitude: " + crd.longitude;
+        };
+
+        function error(err) {
+            console.warn('ERROR(' + err.code + '): ' + err.message);
+        };
+
+        target = {
+            latitude: 0,
+            longitude: 0,
+        }
+
+        options = {
+            enableHighAccuracy: false,
+            timeout: 5000,
+            maximumAge: 0
+        };
+
+        const watchId = navigator.geolocation.watchPosition(success, error, options);
+    </script>
+
+</body>
+
+</html>
