@@ -24,7 +24,7 @@
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
     
-    document.querySelector('#BoxN').setAttribute('gps-entity-place', `latitude: ${latitude + 0.0002}; longitude: ${longitude};`);
+    document.querySelector('#BoxN').setAttribute('gps-entity-place', `latitude: 1; longitude: 1;`);
     document.querySelector('#SphereS').setAttribute('gps-entity-place', `latitude: ${latitude - 0.0002}; longitude: ${longitude};`);
     document.querySelector('#CylibderE').setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude + 0.0002};`);
     document.querySelector('#ImageW').setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude - 0.0002};`);
