@@ -23,17 +23,11 @@
 
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
-
-    scene.innerHTML = scene.innerHTML
-                      .replace("#lat1",`${latitude + 0.0002}`)      //N
-                      .replace("#long1",`${longitude}`)
-                      .replace("#lat2",`${latitude - 0.0002}`)      //S
-                      .replace("#long2",`${longitude}`)
-                      .replace("#lat3",`${latitude}`)               //E
-                      .replace("#long3",`${longitude + 0.0002}`)
-                      .replace("#lat4",`${latitude}`)               //W
-                      .replace("#long4",`${longitude - 0.0002}`);;
     
+    document.querySelector('#BoxN').setAttribute('gps-entity-place', `latitude: ${latitude + 0.0002}; longitude: ${longitude};`);
+    document.querySelector('#SphereS').setAttribute('gps-entity-place', `latitude: ${latitude - 0.0002}; longitude: ${longitude};`);
+    document.querySelector('#CylibderE').setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude + 0.0002};`);
+    document.querySelector('#ImageW').setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude - 0.0002};`);
 
   }
 
@@ -62,10 +56,10 @@
       <img id="texture1" src="LogoDPMW.png">
     </a-assets>
 
-    <a-box color="#4CC3D9" gps-entity-place="latitude: #lat1; longitude: #long1;"></a-box>                <!-- N -->
-    <a-sphere color="#EF2D5E" gps-entity-place="latitude: #lat2; longitude: #long2;"></a-sphere>          <!-- S -->
-    <a-cylinder color="#FFC65D" gps-entity-place="latitude: #lat3; longitude: #long3;"></a-cylinder>      <!-- E -->
-    <a-image src="#texture1" gps-entity-place="latitude: #lat4; longitude: #long4;"></a-image>            <!-- W -->
+    <a-box color="#4CC3D9" id="BoxN"></a-box>                   <!-- N -->
+    <a-sphere color="#EF2D5E" id="SphereS"></a-sphere>          <!-- S -->
+    <a-cylinder color="#FFC65D" id="CylibderE"></a-cylinder>    <!-- E -->
+    <a-image src="#texture1" id="ImageW"></a-image>             <!-- W -->
     <a-camera gps-camera rotation-reader> </a-camera>
   </a-scene>
 </body>
