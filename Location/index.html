@@ -1,33 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>GeoAR.js demo</title>
-    <script src="./aframe.min.js"></script>
-    <script src="./aframe-look-at-component.min.js"></script>
-    <script src="./aframe-ar-nft.js"></script>
-  </head>
 
-  <body style="margin: 0; overflow: hidden;">
-    <a-scene
-      vr-mode-ui="enabled: false"
-      embedded
-      arjs="sourceType: webcam; debugUIEnabled: false;"
-    >
-      <a-box
-        color="#4CC3D9"
-        gps-entity-place="latitude: 42.806295; longitude: -1.659903;"
-      ></a-box>
-      <a-sphere
-        color="#EF2D5E"
-        gps-entity-place="latitude: 42.806422; longitude: -1.658888;"
-      ></a-sphere>
-      <a-cylinder
-        color="#FFC65D"
-        gps-entity-place="latitude: 42.807087; longitude: -1.658866;"
-      ></a-cylinder>
-      <a-camera gps-camera rotation-reader> </a-camera>
-    </a-scene>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>GeoAR.js demo</title>
+  <script src="./aframe.min.js"></script>
+  <script src="./aframe-look-at-component.min.js"></script>
+  <script src="./aframe-ar-nft.js"></script>
+</head>
+
+<script>
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showSuccess, showError);
+    } else {
+    }
+  }
+
+  function showSuccess(position) {
+    var scene = document.getElementById("mainSecene");
+
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
+
+    scene.innerHTML = scene.innerHTML
+                      .replace("#lat1",`${latitude + 0.0002}`)      //N
+                      .replace("#long1",`${longitude}`)
+                      .replace("#lat2",`${latitude - 0.0002}`)      //S
+                      .replace("#long2",`${longitude}`)
+                      .replace("#lat3",`${latitude}`)               //E
+                      .replace("#long3",`${longitude + 0.0002}`)
+                      .replace("#lat4",`${latitude}`)               //W
+                      .replace("#long4",`${longitude - 0.0002}`);;
+    
+
+  }
+
+  function showError(error) {
+    switch (error.code) {
+      case error.PERMISSION_DENIED:
+        message.innerHTML = "User denied the request for Geolocation."
+        break;
+      case error.POSITION_UNAVAILABLE:
+        message.innerHTML = "Location information is unavailable."
+        break;
+      case error.TIMEOUT:
+        message.innerHTML = "The request to get user location timed out."
+        break;
+      case error.UNKNOWN_ERROR:
+        message.innerHTML = "An unknown error occurred."
+        break;
+    }
+  }
+</script>
+
+<body style="margin: 0; overflow: hidden;" onload="getLocation()">
+  <a-scene vr-mode-ui=" enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;" id="mainSecene">
+
+    <a-assets>
+      <img id="texture1" src="LogoDPMW.png">
+    </a-assets>
+
+    <a-box color="#4CC3D9" gps-entity-place="latitude: #lat1; longitude: #long1;"></a-box>                <!-- N -->
+    <a-sphere color="#EF2D5E" gps-entity-place="latitude: #lat2; longitude: #long2;"></a-sphere>          <!-- S -->
+    <a-cylinder color="#FFC65D" gps-entity-place="latitude: #lat3; longitude: #long3;"></a-cylinder>      <!-- E -->
+    <a-image src="#texture1" gps-entity-place="latitude: #lat4; longitude: #long4;"></a-image>            <!-- W -->
+    <a-camera gps-camera rotation-reader> </a-camera>
+  </a-scene>
+</body>
+
 </html>
