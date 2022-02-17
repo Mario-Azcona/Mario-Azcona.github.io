@@ -24,7 +24,7 @@
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
     
-    document.querySelector('#BoxN').setAttribute('gps-entity-place', `latitude: 1; longitude: 1;`);
+    document.querySelector('#BoxN').setAttribute('gps-entity-place', `latitude: ${latitude + 0.0002}; longitude: ${longitude};`);
     document.querySelector('#SphereS').setAttribute('gps-entity-place', `latitude: ${latitude - 0.0002}; longitude: ${longitude};`);
     document.querySelector('#CylibderE').setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude + 0.0002};`);
     document.querySelector('#ImageW').setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude - 0.0002};`);
@@ -56,9 +56,9 @@
       <img id="texture1" src="LogoDPMW.png">
     </a-assets>
 
-    <a-box color="#4CC3D9" id="BoxN"></a-box>                   <!-- N -->
-    <a-sphere color="#EF2D5E" id="SphereS"></a-sphere>          <!-- S -->
-    <a-cylinder color="#FFC65D" id="CylibderE"></a-cylinder>    <!-- E -->
+    <a-box color="#FF0000" id="BoxN"></a-box>                   <!-- N -->
+    <a-sphere color="#00FF00" id="SphereS"></a-sphere>          <!-- S -->
+    <a-cylinder color="#0000FF" id="CylibderE"></a-cylinder>    <!-- E -->
     <a-image src="#texture1" id="ImageW"></a-image>             <!-- W -->
     <a-camera gps-camera rotation-reader> </a-camera>
   </a-scene>
