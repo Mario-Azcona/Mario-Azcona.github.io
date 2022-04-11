@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Image based tracking AR.js demo</title>
     <!-- import aframe and then ar.js with image tracking / location based features -->
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="aframe.min.js"></script>
+    <script src="aframe-ar-nft.js"></script>
 
     <!-- style for the loader -->
     <style>
@@ -55,7 +55,7 @@
         smoothTolerance=".01"
         smoothThreshold="5">
           <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-          <a-image src="https://mario-azcona.github.io/Images/Amanece_SQ20_SH05_NFT_img01039.jpg" id="Img1" width="1280" height="536" rotation="90 0 0"></a-image>
+          <a-image src="https://mario-azcona.github.io/Images/Amanece_SQ20_SH05_NFT_img01039.jpg" id="Img1" width="1280" height="536" rotation="90 0 90" position="-640 -268 0"></a-image>
       </a-nft>
       <!-- static camera that moves according to the device movemenents -->
       <a-entity camera></a-entity>
