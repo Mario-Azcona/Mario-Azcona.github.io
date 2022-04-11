@@ -46,9 +46,6 @@
       <!-- a-nft is the anchor that defines an Image Tracking entity -->
       <!-- on 'url' use the path to the Image Descriptors created before. -->
       <!-- the path should end with the name without the extension e.g. if file is trex.fset' the path should end with trex -->
-      <a-assets>
-        <img id="img1" src="Images/Amanece_SQ20_SH05_NFT_img01039.jpg">
-      </a-assets>
 
       <a-nft
         type="nft"
@@ -58,7 +55,7 @@
         smoothTolerance=".01"
         smoothThreshold="5">
           <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-          <a-image src="#img1" id="Img1"></a-image>
+          <a-image src="https://mario-azcona.github.io/Images/Amanece_SQ20_SH05_NFT_img01039.jpg" id="Img1"></a-image>
       </a-nft>
       <!-- static camera that moves according to the device movemenents -->
       <a-entity camera></a-entity>
