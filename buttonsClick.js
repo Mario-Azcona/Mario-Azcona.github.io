@@ -70,8 +70,8 @@ pauseButton2.addEventListener('click', function (evt) {
     playButton2.setAttribute("visible",true);
     playButton2.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton2.setAttribute("visible",false);
+    pauseButton2.className = "";
     
     document.querySelector("#frameImg2").setAttribute("visible",true);
     document.querySelector("#frameVideo2").setAttribute("visible",false);
@@ -93,7 +93,7 @@ infoButton3.addEventListener('click', function (evt) {
 });
 buyButton3.addEventListener('click', function (evt) {
 
-    window.open("assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223830668030509057","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223830668030509057","_blank");
 });
 playButton3.addEventListener('click', function (evt) {
     playButton3.setAttribute("visible",false);
