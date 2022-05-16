@@ -293,7 +293,7 @@ infoButton8.addEventListener('click', function (evt) {
 });
 buyButton8.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223837265100275713","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223836165588647937","_blank");
 });
 playButton8.addEventListener('click', function (evt) {
     playButton8.setAttribute("visible",false);
@@ -333,7 +333,7 @@ infoButton9.addEventListener('click', function (evt) {
 });
 buyButton9.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223848260216553473","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223837265100275713","_blank");
 });
 playButton9.addEventListener('click', function (evt) {
     playButton9.setAttribute("visible",false);
@@ -373,7 +373,7 @@ infoButton10.addEventListener('click', function (evt) {
 });
 buyButton10.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223838364611903489","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223848260216553473","_blank");
 });
 playButton10.addEventListener('click', function (evt) {
     playButton10.setAttribute("visible",false);
@@ -413,7 +413,7 @@ infoButton11.addEventListener('click', function (evt) {
 });
 buyButton11.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223839464123531265","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223838364611903489","_blank");
 });
 playButton11.addEventListener('click', function (evt) {
     playButton11.setAttribute("visible",false);
@@ -453,7 +453,7 @@ infoButton12.addEventListener('click', function (evt) {
 });
 buyButton12.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223841663146786817","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223839464123531265","_blank");
 });
 playButton12.addEventListener('click', function (evt) {
     playButton12.setAttribute("visible",false);
@@ -493,7 +493,7 @@ infoButton13.addEventListener('click', function (evt) {
 });
 buyButton13.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223842762658414593","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223841663146786817","_blank");
 });
 playButton13.addEventListener('click', function (evt) {
     playButton13.setAttribute("visible",false);
@@ -533,7 +533,7 @@ infoButton14.addEventListener('click', function (evt) {
 });
 buyButton14.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223843862170042369","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223842762658414593","_blank");
 });
 playButton14.addEventListener('click', function (evt) {
     playButton14.setAttribute("visible",false);
@@ -573,7 +573,7 @@ infoButton15.addEventListener('click', function (evt) {
 });
 buyButton15.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223844961681670145","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223843862170042369","_blank");
 });
 playButton15.addEventListener('click', function (evt) {
     playButton15.setAttribute("visible",false);
@@ -613,7 +613,7 @@ infoButton16.addEventListener('click', function (evt) {
 });
 buyButton16.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223846061193297921","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223844961681670145","_blank");
 });
 playButton16.addEventListener('click', function (evt) {
     playButton16.setAttribute("visible",false);
@@ -653,7 +653,7 @@ infoButton17.addEventListener('click', function (evt) {
 });
 buyButton17.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223840563635159041","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223846061193297921","_blank");
 });
 playButton17.addEventListener('click', function (evt) {
     playButton17.setAttribute("visible",false);
@@ -693,7 +693,7 @@ infoButton18.addEventListener('click', function (evt) {
 });
 buyButton18.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223847160704925697","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223840563635159041","_blank");
 });
 playButton18.addEventListener('click', function (evt) {
     playButton18.setAttribute("visible",false);
@@ -733,7 +733,7 @@ infoButton19.addEventListener('click', function (evt) {
 });
 buyButton19.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223849359728181249","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223847160704925697","_blank");
 });
 playButton19.addEventListener('click', function (evt) {
     playButton19.setAttribute("visible",false);
