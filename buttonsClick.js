@@ -323,7 +323,7 @@ const buyButton9 = document.querySelector('#buyButton9');
 const playButton9 = document.querySelector('#playButton9');
 const pauseButton9 = document.querySelector('#pauseButton9');
 infoButton9.addEventListener('click', function (evt) {
-    infoText = document.querySelector('#infoFrame1');
+    infoText = document.querySelector('#infoFrame9');
 
     if(infoText.getAttribute("visible") == true){
         infoText.setAttribute("visible",false);
@@ -333,7 +333,7 @@ infoButton9.addEventListener('click', function (evt) {
 });
 buyButton9.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223848260216553473","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223837265100275713","_blank");
 });
 playButton9.addEventListener('click', function (evt) {
     playButton9.setAttribute("visible",false);
@@ -373,7 +373,7 @@ infoButton10.addEventListener('click', function (evt) {
 });
 buyButton10.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223838364611903489","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223848260216553473","_blank");
 });
 playButton10.addEventListener('click', function (evt) {
     playButton10.setAttribute("visible",false);
@@ -413,7 +413,7 @@ infoButton11.addEventListener('click', function (evt) {
 });
 buyButton11.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223839464123531265","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223838364611903489","_blank");
 });
 playButton11.addEventListener('click', function (evt) {
     playButton11.setAttribute("visible",false);
@@ -453,7 +453,7 @@ infoButton12.addEventListener('click', function (evt) {
 });
 buyButton12.addEventListener('click', function (evt) {
 
-    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223841663146786817","_blank");
+    window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223839464123531265","_blank");
 });
 playButton12.addEventListener('click', function (evt) {
     playButton12.setAttribute("visible",false);
