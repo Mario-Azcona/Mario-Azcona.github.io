@@ -16,22 +16,22 @@ buyButton1.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223828469007253505","_blank");
 });
 playButton1.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton1.setAttribute("visible",false);
+    playButton1.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton1.setAttribute("visible",true);
+    pauseButton1.className = "clickable";
 
     document.querySelector("#frameImg1").setAttribute("visible",false);
     document.querySelector("#frameVideo1").setAttribute("visible",true);
     document.querySelector("#Shot1").play();
 });
 pauseButton1.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton1.setAttribute("visible",true);
+    playButton1.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton1.setAttribute("visible",false);
+    pauseButton1.className = "";
     
     document.querySelector("#frameImg1").setAttribute("visible",true);
     document.querySelector("#frameVideo1").setAttribute("visible",false);
@@ -56,19 +56,19 @@ buyButton2.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223829568518881281","_blank");
 });
 playButton2.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton2.setAttribute("visible",false);
+    playButton2.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton2.setAttribute("visible",true);
+    pauseButton2.className = "clickable";
 
     document.querySelector("#frameImg2").setAttribute("visible",false);
     document.querySelector("#frameVideo2").setAttribute("visible",true);
     document.querySelector("#Shot2").play();
 });
 pauseButton2.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton2.setAttribute("visible",true);
+    playButton2.className = "clickable";
 
     pauseButton.setAttribute("visible",false);
     pauseButton.className = "";
@@ -96,22 +96,22 @@ buyButton3.addEventListener('click', function (evt) {
     window.open("assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223830668030509057","_blank");
 });
 playButton3.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton3.setAttribute("visible",false);
+    playButton3.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton3.setAttribute("visible",true);
+    pauseButton3.className = "clickable";
 
     document.querySelector("#frameImg3").setAttribute("visible",false);
     document.querySelector("#frameVideo3").setAttribute("visible",true);
     document.querySelector("#Shot3").play();
 });
 pauseButton3.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton3.setAttribute("visible",true);
+    playButton3.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton3.setAttribute("visible",false);
+    pauseButton3.className = "";
     
     document.querySelector("#frameImg3").setAttribute("visible",true);
     document.querySelector("#frameVideo3").setAttribute("visible",false);
@@ -136,22 +136,22 @@ buyButton4.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223831767542136833","_blank");
 });
 playButton4.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton4.setAttribute("visible",false);
+    playButton4.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton4.setAttribute("visible",true);
+    pauseButton4.className = "clickable";
 
     document.querySelector("#frameImg4").setAttribute("visible",false);
     document.querySelector("#frameVideo4").setAttribute("visible",true);
     document.querySelector("#Shot4").play();
 });
 pauseButton4.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton4.setAttribute("visible",true);
+    playButton4.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton4.setAttribute("visible",false);
+    pauseButton4.className = "";
     
     document.querySelector("#frameImg4").setAttribute("visible",true);
     document.querySelector("#frameVideo4").setAttribute("visible",false);
@@ -176,22 +176,22 @@ buyButton5.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223832867053764609","_blank");
 });
 playButton5.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton5.setAttribute("visible",false);
+    playButton5.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton5.setAttribute("visible",true);
+    pauseButton5.className = "clickable";
 
     document.querySelector("#frameImg5").setAttribute("visible",false);
     document.querySelector("#frameVideo5").setAttribute("visible",true);
     document.querySelector("#Shot5").play();
 });
 pauseButton5.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton5.setAttribute("visible",true);
+    playButton5.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton5.setAttribute("visible",false);
+    pauseButton5.className = "";
     
     document.querySelector("#frameImg5").setAttribute("visible",true);
     document.querySelector("#frameVideo5").setAttribute("visible",false);
@@ -216,22 +216,22 @@ buyButton6.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223833966565392385","_blank");
 });
 playButton6.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton6.setAttribute("visible",false);
+    playButton6.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton6.setAttribute("visible",true);
+    pauseButton6.className = "clickable";
 
     document.querySelector("#frameImg6").setAttribute("visible",false);
     document.querySelector("#frameVideo6").setAttribute("visible",true);
     document.querySelector("#Shot6").play();
 });
 pauseButton6.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton6.setAttribute("visible",true);
+    playButton6.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton6.setAttribute("visible",false);
+    pauseButton6.className = "";
     
     document.querySelector("#frameImg6").setAttribute("visible",true);
     document.querySelector("#frameVideo6").setAttribute("visible",false);
@@ -256,22 +256,22 @@ buyButton7.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223835066077020161","_blank");
 });
 playButton7.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton7.setAttribute("visible",false);
+    playButton7.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton7.setAttribute("visible",true);
+    pauseButton7.className = "clickable";
 
     document.querySelector("#frameImg7").setAttribute("visible",false);
     document.querySelector("#frameVideo7").setAttribute("visible",true);
     document.querySelector("#Shot7").play();
 });
 pauseButton7.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton7.setAttribute("visible",true);
+    playButton7.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton7.setAttribute("visible",false);
+    pauseButton7.className = "";
     
     document.querySelector("#frameImg7").setAttribute("visible",true);
     document.querySelector("#frameVideo7").setAttribute("visible",false);
@@ -296,22 +296,22 @@ buyButton8.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223836165588647937","_blank");
 });
 playButton8.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton8.setAttribute("visible",false);
+    playButton8.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton8.setAttribute("visible",true);
+    pauseButton8.className = "clickable";
 
     document.querySelector("#frameImg8").setAttribute("visible",false);
     document.querySelector("#frameVideo8").setAttribute("visible",true);
     document.querySelector("#Shot8").play();
 });
 pauseButton8.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton8.setAttribute("visible",true);
+    playButton8.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton8.setAttribute("visible",false);
+    pauseButton8.className = "";
     
     document.querySelector("#frameImg8").setAttribute("visible",true);
     document.querySelector("#frameVideo8").setAttribute("visible",false);
@@ -336,22 +336,22 @@ buyButton9.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223848260216553473","_blank");
 });
 playButton9.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton9.setAttribute("visible",false);
+    playButton9.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton9.setAttribute("visible",true);
+    pauseButton9.className = "clickable";
 
     document.querySelector("#frameImg9").setAttribute("visible",false);
     document.querySelector("#frameVideo9").setAttribute("visible",true);
     document.querySelector("#Shot9").play();
 });
 pauseButton9.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton9.setAttribute("visible",true);
+    playButton9.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton9.setAttribute("visible",false);
+    pauseButton9.className = "";
     
     document.querySelector("#frameImg9").setAttribute("visible",true);
     document.querySelector("#frameVideo9").setAttribute("visible",false);
@@ -376,22 +376,22 @@ buyButton10.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223838364611903489","_blank");
 });
 playButton10.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton10.setAttribute("visible",false);
+    playButton10.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton10.setAttribute("visible",true);
+    pauseButton10.className = "clickable";
 
     document.querySelector("#frameImg10").setAttribute("visible",false);
     document.querySelector("#frameVideo10").setAttribute("visible",true);
     document.querySelector("#Shot10").play();
 });
 pauseButton10.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton10.setAttribute("visible",true);
+    playButton10.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton10.setAttribute("visible",false);
+    pauseButton10.className = "";
     
     document.querySelector("#frameImg10").setAttribute("visible",true);
     document.querySelector("#frameVideo10").setAttribute("visible",false);
@@ -416,22 +416,22 @@ buyButton11.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223839464123531265","_blank");
 });
 playButton11.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton11.setAttribute("visible",false);
+    playButton11.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton11.setAttribute("visible",true);
+    pauseButton11.className = "clickable";
 
     document.querySelector("#frameImg11").setAttribute("visible",false);
     document.querySelector("#frameVideo11").setAttribute("visible",true);
     document.querySelector("#Shot11").play();
 });
 pauseButton11.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton11.setAttribute("visible",true);
+    playButton11.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton11.setAttribute("visible",false);
+    pauseButton11.className = "";
     
     document.querySelector("#frameImg11").setAttribute("visible",true);
     document.querySelector("#frameVideo11").setAttribute("visible",false);
@@ -456,22 +456,22 @@ buyButton12.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223841663146786817","_blank");
 });
 playButton12.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton12.setAttribute("visible",false);
+    playButton12.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton12.setAttribute("visible",true);
+    pauseButton12.className = "clickable";
 
     document.querySelector("#frameImg12").setAttribute("visible",false);
     document.querySelector("#frameVideo12").setAttribute("visible",true);
     document.querySelector("#Shot12").play();
 });
 pauseButton12.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton12.setAttribute("visible",true);
+    playButton12.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton12.setAttribute("visible",false);
+    pauseButton12.className = "";
     
     document.querySelector("#frameImg12").setAttribute("visible",true);
     document.querySelector("#frameVideo12").setAttribute("visible",false);
@@ -496,22 +496,22 @@ buyButton13.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223841663146786817","_blank");
 });
 playButton13.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton13.setAttribute("visible",false);
+    playButton13.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton13.setAttribute("visible",true);
+    pauseButton13.className = "clickable";
 
     document.querySelector("#frameImg13").setAttribute("visible",false);
     document.querySelector("#frameVideo13").setAttribute("visible",true);
     document.querySelector("#Shot13").play();
 });
 pauseButton13.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton13.setAttribute("visible",true);
+    playButton13.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton13.setAttribute("visible",false);
+    pauseButton13.className = "";
     
     document.querySelector("#frameImg13").setAttribute("visible",true);
     document.querySelector("#frameVideo13").setAttribute("visible",false);
@@ -536,22 +536,22 @@ buyButton14.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223842762658414593","_blank");
 });
 playButton14.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton14.setAttribute("visible",false);
+    playButton14.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton14.setAttribute("visible",true);
+    pauseButton14.className = "clickable";
 
     document.querySelector("#frameImg14").setAttribute("visible",false);
     document.querySelector("#frameVideo14").setAttribute("visible",true);
     document.querySelector("#Shot14").play();
 });
 pauseButton14.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton14.setAttribute("visible",true);
+    playButton14.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton14.setAttribute("visible",false);
+    pauseButton14.className = "";
     
     document.querySelector("#frameImg14").setAttribute("visible",true);
     document.querySelector("#frameVideo14").setAttribute("visible",false);
@@ -576,22 +576,22 @@ buyButton15.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223843862170042369","_blank");
 });
 playButton15.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton15.setAttribute("visible",false);
+    playButton15.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton15.setAttribute("visible",true);
+    pauseButton15.className = "clickable";
 
     document.querySelector("#frameImg15").setAttribute("visible",false);
     document.querySelector("#frameVideo15").setAttribute("visible",true);
     document.querySelector("#Shot15").play();
 });
 pauseButton15.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton15.setAttribute("visible",true);
+    playButton15.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton15.setAttribute("visible",false);
+    pauseButton15.className = "";
     
     document.querySelector("#frameImg15").setAttribute("visible",true);
     document.querySelector("#frameVideo15").setAttribute("visible",false);
@@ -616,22 +616,22 @@ buyButton16.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223844961681670145","_blank");
 });
 playButton16.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton16.setAttribute("visible",false);
+    playButton16.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton16.setAttribute("visible",true);
+    pauseButton16.className = "clickable";
 
     document.querySelector("#frameImg16").setAttribute("visible",false);
     document.querySelector("#frameVideo16").setAttribute("visible",true);
     document.querySelector("#Shot16").play();
 });
 pauseButton16.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton16.setAttribute("visible",true);
+    playButton16.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton16.setAttribute("visible",false);
+    pauseButton16.className = "";
     
     document.querySelector("#frameImg16").setAttribute("visible",true);
     document.querySelector("#frameVideo16").setAttribute("visible",false);
@@ -656,22 +656,22 @@ buyButton17.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223846061193297921","_blank");
 });
 playButton17.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton17.setAttribute("visible",false);
+    playButton17.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton17.setAttribute("visible",true);
+    pauseButton17.className = "clickable";
 
     document.querySelector("#frameImg17").setAttribute("visible",false);
     document.querySelector("#frameVideo17").setAttribute("visible",true);
     document.querySelector("#Shot17").play();
 });
 pauseButton17.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton17.setAttribute("visible",true);
+    playButton17.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton17.setAttribute("visible",false);
+    pauseButton17.className = "";
     
     document.querySelector("#frameImg17").setAttribute("visible",true);
     document.querySelector("#frameVideo17").setAttribute("visible",false);
@@ -696,22 +696,22 @@ buyButton18.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223840563635159041","_blank");
 });
 playButton18.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton18.setAttribute("visible",false);
+    playButton18.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton18.setAttribute("visible",true);
+    pauseButton18.className = "clickable";
 
     document.querySelector("#frameImg18").setAttribute("visible",false);
     document.querySelector("#frameVideo18").setAttribute("visible",true);
     document.querySelector("#Shot18").play();
 });
 pauseButton18.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton18.setAttribute("visible",true);
+    playButton18.className = "clickable";
 
     pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton18.className = "";
     
     document.querySelector("#frameImg18").setAttribute("visible",true);
     document.querySelector("#frameVideo18").setAttribute("visible",false);
@@ -736,22 +736,22 @@ buyButton19.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223847160704925697","_blank");
 });
 playButton19.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton19.setAttribute("visible",false);
+    playButton19.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton19.setAttribute("visible",true);
+    pauseButton19.className = "clickable";
 
     document.querySelector("#frameImg19").setAttribute("visible",false);
     document.querySelector("#frameVideo19").setAttribute("visible",true);
     document.querySelector("#Shot19").play();
 });
 pauseButton19.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton19.setAttribute("visible",true);
+    playButton19.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton19.setAttribute("visible",false);
+    pauseButton19.className = "";
     
     document.querySelector("#frameImg19").setAttribute("visible",true);
     document.querySelector("#frameVideo19").setAttribute("visible",false);
@@ -776,22 +776,22 @@ buyButton20.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223849359728181249","_blank");
 });
 playButton20.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton20.setAttribute("visible",false);
+    playButton20.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton20.setAttribute("visible",true);
+    pauseButton20.className = "clickable";
 
     document.querySelector("#frameImg20").setAttribute("visible",false);
     document.querySelector("#frameVideo20").setAttribute("visible",true);
     document.querySelector("#Shot20").play();
 });
 pauseButton20.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton20.setAttribute("visible",true);
+    playButton20.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton20.setAttribute("visible",false);
+    pauseButton20.className = "";
     
     document.querySelector("#frameImg20").setAttribute("visible",true);
     document.querySelector("#frameVideo20").setAttribute("visible",false);
@@ -816,22 +816,22 @@ buyButton21.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223850459239809025","_blank");
 });
 playButton21.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton21.setAttribute("visible",false);
+    playButton21.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton21.setAttribute("visible",true);
+    pauseButton21.className = "clickable";
 
     document.querySelector("#frameImg21").setAttribute("visible",false);
     document.querySelector("#frameVideo21").setAttribute("visible",true);
     document.querySelector("#Shot21").play();
 });
 pauseButton21.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton21.setAttribute("visible",true);
+    playButton21.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton21.setAttribute("visible",false);
+    pauseButton21.className = "";
     
     document.querySelector("#frameImg21").setAttribute("visible",true);
     document.querySelector("#frameVideo21").setAttribute("visible",false);
@@ -856,22 +856,22 @@ buyButton22.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223851558751436801","_blank");
 });
 playButton22.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton22.setAttribute("visible",false);
+    playButton22.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton22.setAttribute("visible",true);
+    pauseButton22.className = "clickable";
 
     document.querySelector("#frameImg22").setAttribute("visible",false);
     document.querySelector("#frameVideo22").setAttribute("visible",true);
     document.querySelector("#Shot22").play();
 });
 pauseButton22.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton22.setAttribute("visible",true);
+    playButton22.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton22.setAttribute("visible",false);
+    pauseButton22.className = "";
     
     document.querySelector("#frameImg22").setAttribute("visible",true);
     document.querySelector("#frameVideo22").setAttribute("visible",false);
@@ -896,22 +896,22 @@ buyButton23.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223852658263064577","_blank");
 });
 playButton23.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton23.setAttribute("visible",false);
+    playButton23.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton23.setAttribute("visible",true);
+    pauseButton23.className = "clickable";
 
     document.querySelector("#frameImg23").setAttribute("visible",false);
     document.querySelector("#frameVideo23").setAttribute("visible",true);
     document.querySelector("#Shot23").play();
 });
 pauseButton23.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton23.setAttribute("visible",true);
+    playButton23.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton23.setAttribute("visible",false);
+    pauseButton23.className = "";
     
     document.querySelector("#frameImg23").setAttribute("visible",true);
     document.querySelector("#frameVideo23").setAttribute("visible",false);
@@ -936,22 +936,22 @@ buyButton24.addEventListener('click', function (evt) {
     window.open("https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/11008098764250472881749386972867163286971159423479359307477223853757774692353","_blank");
 });
 playButton24.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",false);
-    playButton.className = "";
+    playButton24.setAttribute("visible",false);
+    playButton24.className = "";
 
-    pauseButton.setAttribute("visible",true);
-    pauseButton.className = "clickable";
+    pauseButton24.setAttribute("visible",true);
+    pauseButton24.className = "clickable";
 
     document.querySelector("#frameImg24").setAttribute("visible",false);
     document.querySelector("#frameVideo24").setAttribute("visible",true);
     document.querySelector("#Shot24").play();
 });
 pauseButton24.addEventListener('click', function (evt) {
-    playButton.setAttribute("visible",true);
-    playButton.className = "clickable";
+    playButton24.setAttribute("visible",true);
+    playButton24.className = "clickable";
 
-    pauseButton.setAttribute("visible",false);
-    pauseButton.className = "";
+    pauseButton24.setAttribute("visible",false);
+    pauseButton24.className = "";
     
     document.querySelector("#frameImg24").setAttribute("visible",true);
     document.querySelector("#frameVideo24").setAttribute("visible",false);
