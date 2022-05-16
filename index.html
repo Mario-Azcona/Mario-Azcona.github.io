@@ -6,58 +6,61 @@
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
 
-    <script src="changeCamera.js"></script>
-
-    <link rel="stylesheet" href="style.css">
-
   </head>
   <body>
     <a-scene mindar-image="imageTargetSrc: https://mario-azcona.github.io/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
 
         <a-assets>
-            <img id="NFT1" src="https://mario-azcona.github.io/Images/Amanece_SQ20_SH05_NFT_img01039.jpg" crossorigin="anonymous"/>
-            <img id="NFT2" src="https://mario-azcona.github.io/Images/Amanece_SQ20_SH20_NFT_img01249.jpg" crossorigin="anonymous"/>
-            <img id="NFT3" src="https://mario-azcona.github.io/Images/Amanece_SQ20_SH30_NFT_img01330.jpg" crossorigin="anonymous"/>
-            <img id="NFT4" src="https://mario-azcona.github.io/Images/Amanece_SQ30_SH10_NFT_img01620.jpg" crossorigin="anonymous"/>
-            <img id="NFT5" src="https://mario-azcona.github.io/Images/Amanece_SQ30_SH20_NFT_img01621.jpg" crossorigin="anonymous"/>
-            <img id="NFT6" src="https://mario-azcona.github.io/Images/Amanece_SQ30_SH50_NFT_img01779.jpg" crossorigin="anonymous"/>
-            <img id="NFT7" src="https://mario-azcona.github.io/Images/Amanece_SQ70_SH30_NFT_img02251.jpg" crossorigin="anonymous"/>
-            <img id="NFT8" src="https://mario-azcona.github.io/Images/Amanece_SQ90_SH10_NFT_img03399.jpg" crossorigin="anonymous"/>
-            <img id="NFT9" src="https://mario-azcona.github.io/Images/Amanece_SQ90_SH20_NFT_img03400.jpg" crossorigin="anonymous"/>
-            <img id="NFT10" src="https://mario-azcona.github.io/Images/Amanece_SQ90_SH30_NFT_img03757.jpg" crossorigin="anonymous"/>
-            <img id="NFT11" src="https://mario-azcona.github.io/Images/Amanece_SQ90_SH40_A_NFT_img03972.jpg" crossorigin="anonymous"/>
-            <img id="NFT12" src="https://mario-azcona.github.io/Images/Amanece_SQ90_SH60_A_NFT_img05580.jpg" crossorigin="anonymous"/>
-            <img id="NFT13" src="https://mario-azcona.github.io/Images/Amanece_SQ90_SH180_A_NFT_img04131.jpg" crossorigin="anonymous"/>
-            <img id="NFT14" src="https://mario-azcona.github.io/Images/Amanece_SQ90_SH190_NFT_img04537.jpg" crossorigin="anonymous"/>
-            <img id="NFT15" src="https://mario-azcona.github.io/Images/Amanece_SQ100_SH50_NFT_img05278.jpg" crossorigin="anonymous"/>
-            <img id="NFT16" src="https://mario-azcona.github.io/Images/Amanece_SQ110_SH10_NFT_img05356.jpg" crossorigin="anonymous"/>
-            <img id="NFT17" src="https://mario-azcona.github.io/Images/Amanece_SQ110_SH20_NFT_img05406.jpg" crossorigin="anonymous"/>
-            <img id="NFT18" src="https://mario-azcona.github.io/Images/Amanece_SQ110_SH80_NFT_img06052.jpg" crossorigin="anonymous"/>
-            <img id="NFT19" src="https://mario-azcona.github.io/Images/Amanece_SQ130_SH20_A_NFT_img03595.jpg" crossorigin="anonymous"/>
-            <img id="NFT20" src="https://mario-azcona.github.io/Images/Amanece_SQ150_SH10_NFT_img10601.jpg" crossorigin="anonymous"/>
-            <img id="NFT21" src="https://mario-azcona.github.io/Images/Amanece_SQ160_SH10_NFT_img11064.jpg" crossorigin="anonymous"/>
-            <img id="NFT22" src="https://mario-azcona.github.io/Images/Amanece_SQ160_SH20_NFT_img11165.jpg" crossorigin="anonymous"/>
-            <img id="NFT23" src="https://mario-azcona.github.io/Images/Amanece_SQ170_SH10_NFT_img11441.jpg" crossorigin="anonymous"/>
-            <img id="NFT24" src="https://mario-azcona.github.io/Images/Amanece_SQ170_SH20_NFT_img13104.jpg" crossorigin="anonymous"/>
+            <img id="NFT1" src="./Images/Amanece_SQ20_SH05_NFT_img01039.jpg" crossorigin="anonymous"/>
+            <video id="Shot1" autoplay="false" loop="true" src="./Shots/Amanece_SQ20_SH05_NFT_vid.mp4"></video>
 
-            <img id="changeCamera" src="https://mario-azcona.github.io/Images/img_530011.png" crossorigin="anonymous"/>
-            <img id="PlayButton" src="https://mario-azcona.github.io/Images/play_border.png" crossorigin="anonymous"/>
-            <img id="PauseButton" src="https://mario-azcona.github.io/Images/pause_border.png" crossorigin="anonymous"/>
-            <img id="InfoButton" src="https://mario-azcona.github.io/Images/info_border.png" crossorigin="anonymous"/>
-            <img id="BuyButton" src="https://mario-azcona.github.io/Images/buy_border.png" crossorigin="anonymous"/>
+            <img id="NFT2" src="./Images/Amanece_SQ20_SH20_NFT_img01249.jpg" crossorigin="anonymous"/>
+            <img id="NFT3" src="./Images/Amanece_SQ20_SH30_NFT_img01330.jpg" crossorigin="anonymous"/>
+            <img id="NFT4" src="./Images/Amanece_SQ30_SH10_NFT_img01620.jpg" crossorigin="anonymous"/>
+            <img id="NFT5" src="./Images/Amanece_SQ30_SH20_NFT_img01621.jpg" crossorigin="anonymous"/>
+            <img id="NFT6" src="./Images/Amanece_SQ30_SH50_NFT_img01779.jpg" crossorigin="anonymous"/>
+            <img id="NFT7" src="./Images/Amanece_SQ70_SH30_NFT_img02251.jpg" crossorigin="anonymous"/>
+            <img id="NFT8" src="./Images/Amanece_SQ90_SH10_NFT_img03399.jpg" crossorigin="anonymous"/>
+            <img id="NFT9" src="./Images/Amanece_SQ90_SH20_NFT_img03400.jpg" crossorigin="anonymous"/>
+            <img id="NFT10" src="./Images/Amanece_SQ90_SH30_NFT_img03757.jpg" crossorigin="anonymous"/>
+            <img id="NFT11" src="./Images/Amanece_SQ90_SH40_A_NFT_img03972.jpg" crossorigin="anonymous"/>
+            <img id="NFT12" src="./Images/Amanece_SQ90_SH60_A_NFT_img05580.jpg" crossorigin="anonymous"/>
+            <img id="NFT13" src="./Images/Amanece_SQ90_SH180_A_NFT_img04131.jpg" crossorigin="anonymous"/>
+            <img id="NFT14" src="./Images/Amanece_SQ90_SH190_NFT_img04537.jpg" crossorigin="anonymous"/>
+            <img id="NFT15" src="./Images/Amanece_SQ100_SH50_NFT_img05278.jpg" crossorigin="anonymous"/>
+            <img id="NFT16" src="./Images/Amanece_SQ110_SH10_NFT_img05356.jpg" crossorigin="anonymous"/>
+            <img id="NFT17" src="./Images/Amanece_SQ110_SH20_NFT_img05406.jpg" crossorigin="anonymous"/>
+            <img id="NFT18" src="./Images/Amanece_SQ110_SH80_NFT_img06052.jpg" crossorigin="anonymous"/>
+            <img id="NFT19" src="./Images/Amanece_SQ130_SH20_A_NFT_img03595.jpg" crossorigin="anonymous"/>
+            <img id="NFT20" src="./Images/Amanece_SQ150_SH10_NFT_img10601.jpg" crossorigin="anonymous"/>
+            <img id="NFT21" src="./Images/Amanece_SQ160_SH10_NFT_img11064.jpg" crossorigin="anonymous"/>
+            <img id="NFT22" src="./Images/Amanece_SQ160_SH20_NFT_img11165.jpg" crossorigin="anonymous"/>
+            <img id="NFT23" src="./Images/Amanece_SQ170_SH10_NFT_img11441.jpg" crossorigin="anonymous"/>
+            <img id="NFT24" src="./Images/Amanece_SQ170_SH20_NFT_img13104.jpg" crossorigin="anonymous"/>
+
+            <img id="PlayButtonImg" src="./Images/play_border.png" crossorigin="anonymous"/>
+            <img id="PauseButtonImg" src="./Images/pause_border.png" crossorigin="anonymous"/>
+            <img id="InfoButtonImg" src="./Images/info_border.png" crossorigin="anonymous"/>
+            <img id="BuyButtonImg" src="./Images/buy_border.png" crossorigin="anonymous"/>
 
         </a-assets>
 
-        <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
-
-        <a-entity>
-            <a-plane src="#changeCamera" position="0 0 0" height="1" width="2.388" rotation="0 0 0"></a-plane>
-        </a-entity>
+        <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable"></a-camera>
 
         <a-entity mindar-image-target="targetIndex: 0">
-            <a-plane src="#NFT1" position="0 0 0" height="1" width="2.388" rotation="0 0 0"></a-plane>
-            <a-plane src="#PlayButton" id="playButton" class="clickable" position="0 0 0.1" height="0.5" width="0.5" rotation="0 0 0" visible="true"></a-plane>
-            <a-plane src="#PauseButton" id="pauseButton" class="clickable" position="0 0 0.1" height="0.5" width="0.5" rotation="0 0 0" visible="false"></a-plane>
+            <a-plane src="#NFT1" id="frameImg1" position="0 0 0" height="1" width="2.388" visible="true"></a-plane>
+            <a-video src="#Shot1" id="frameVideo1" position="0 0 0" height="1" width="2.388" visible="false"></a-video>
+            <a-entity id="infoFrame1" visible="false" position="0 0 0.01">
+                <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
+                <a-text value="El humo negro y espeso, ese que pica en los ojos, apenas nos deja ver las máquinas que hemos creado para viajar al progreso y así perder el futuro." color="black" align="center" width="2" position="0 0 0"></a-text>
+            </a-entity>
+            <a-text value="La Espera 1 - Frame 01039" id="titleFrame1" color="black" align="left" width="2" position="-1 -0.6 0"></a-text>
+            <a-entity position="1 -0.6 0">
+                <a-plane src="#InfoButtonImg" id="infoButton1" class="clickable" position="-0.125 0 0" height="0.1" width="0.1" rotation="0 0 0" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton1" class="clickable" position="0 0 0" height="0.1" width="0.1" rotation="0 0 0" visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton1" class="clickable" position="0.125 0 0" height="0.1" width="0.1" rotation="0 0 0" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton1" class="" position="0.125 0 0" height="0.1" width="0.1" rotation="0 0 0" visible="false"></a-plane>
+            </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 1">
             <a-plane src="#NFT2" position="0 0 0" height="1" width="2.388" rotation="0 0 0"></a-plane>
