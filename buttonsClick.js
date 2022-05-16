@@ -363,7 +363,7 @@ const buyButton10 = document.querySelector('#buyButton10');
 const playButton10 = document.querySelector('#playButton10');
 const pauseButton10 = document.querySelector('#pauseButton10');
 infoButton10.addEventListener('click', function (evt) {
-    infoText = document.querySelector('#infoFrame1');
+    infoText = document.querySelector('#infoFrame10');
 
     if(infoText.getAttribute("visible") == true){
         infoText.setAttribute("visible",false);
