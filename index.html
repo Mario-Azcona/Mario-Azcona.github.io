@@ -1,110 +1,124 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
 
-  </head>
-  <body>
-    <a-scene mindar-image="imageTargetSrc: https://mario-azcona.github.io/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+<body>
+    <a-scene mindar-image="imageTargetSrc: https://mario-azcona.github.io/targets.mind;" color-space="sRGB"
+        renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false" htmlembed>
 
         <a-assets>
-            <img id="NFT1" src="./Images/Amanece_SQ20_SH05_NFT_img01039.jpg" crossorigin="anonymous"/>
+            <img id="NFT1" src="./Images/Amanece_SQ20_SH05_NFT_img01039.jpg" crossorigin="anonymous" />
             <video id="Shot1" autoplay="false" loop="true" src="./Shots/Amanece_SQ20_SH05_NFT_vid.mp4"></video>
 
-            <img id="NFT2" src="./Images/Amanece_SQ20_SH20_NFT_img01249.jpg" crossorigin="anonymous"/>
+            <img id="NFT2" src="./Images/Amanece_SQ20_SH20_NFT_img01249.jpg" crossorigin="anonymous" />
             <video id="Shot2" autoplay="false" loop="true" src="./Shots/Amanece_SQ20_SH20_NFT_vid.mp4"></video>
 
-            <img id="NFT3" src="./Images/Amanece_SQ20_SH30_NFT_img01330.jpg" crossorigin="anonymous"/>
+            <img id="NFT3" src="./Images/Amanece_SQ20_SH30_NFT_img01330.jpg" crossorigin="anonymous" />
             <video id="Shot3" autoplay="false" loop="true" src="./Shots/Amanece_SQ20_SH30_NFT_vid.mp4"></video>
 
-            <img id="NFT4" src="./Images/Amanece_SQ30_SH10_NFT_img01620.jpg" crossorigin="anonymous"/>
+            <img id="NFT4" src="./Images/Amanece_SQ30_SH10_NFT_img01620.jpg" crossorigin="anonymous" />
             <video id="Shot4" autoplay="false" loop="true" src="./Shots/Amanece_SQ30_SH10_NFT_vid.mp4"></video>
 
-            <img id="NFT5" src="./Images/Amanece_SQ30_SH20_NFT_img01621.jpg" crossorigin="anonymous"/>
+            <img id="NFT5" src="./Images/Amanece_SQ30_SH20_NFT_img01621.jpg" crossorigin="anonymous" />
             <video id="Shot5" autoplay="false" loop="true" src="./Shots/Amanece_SQ30_SH20_NFT_vid.mp4"></video>
 
-            <img id="NFT6" src="./Images/Amanece_SQ30_SH50_NFT_img01779.jpg" crossorigin="anonymous"/>
+            <img id="NFT6" src="./Images/Amanece_SQ30_SH50_NFT_img01779.jpg" crossorigin="anonymous" />
             <video id="Shot6" autoplay="false" loop="true" src="./Shots/Amanece_SQ30_SH50_NFT_vid.mp4"></video>
 
-            <img id="NFT7" src="./Images/Amanece_SQ70_SH30_NFT_img02251.jpg" crossorigin="anonymous"/>
+            <img id="NFT7" src="./Images/Amanece_SQ70_SH30_NFT_img02251.jpg" crossorigin="anonymous" />
             <video id="Shot7" autoplay="false" loop="true" src="./Shots/Amanece_SQ70_SH30_NFT_vid.mp4"></video>
 
-            <img id="NFT8" src="./Images/Amanece_SQ90_SH10_NFT_img03399.jpg" crossorigin="anonymous"/>
+            <img id="NFT8" src="./Images/Amanece_SQ90_SH10_NFT_img03399.jpg" crossorigin="anonymous" />
             <video id="Shot8" autoplay="false" loop="true" src="./Shots/Amanece_SQ90_SH10_NFT_vid.mp4"></video>
 
-            <img id="NFT9" src="./Images/Amanece_SQ90_SH20_NFT_img03400.jpg" crossorigin="anonymous"/>
+            <img id="NFT9" src="./Images/Amanece_SQ90_SH20_NFT_img03400.jpg" crossorigin="anonymous" />
             <video id="Shot9" autoplay="false" loop="true" src="./Shots/Amanece_SQ90_SH20_NFT_vid.mp4"></video>
 
-            <img id="NFT10" src="./Images/Amanece_SQ130_SH20_A_NFT_img03595.jpg" crossorigin="anonymous"/>
+            <img id="NFT10" src="./Images/Amanece_SQ130_SH20_A_NFT_img03595.jpg" crossorigin="anonymous" />
             <video id="Shot10" autoplay="false" loop="true" src="./Shots/Amanece_SQ130_SH20_A_NFT_vid.mp4"></video>
 
-            <img id="NFT11" src="./Images/Amanece_SQ90_SH30_NFT_img03757.jpg" crossorigin="anonymous"/>
+            <img id="NFT11" src="./Images/Amanece_SQ90_SH30_NFT_img03757.jpg" crossorigin="anonymous" />
             <video id="Shot11" autoplay="false" loop="true" src="./Shots/Amanece_SQ90_SH30_NFT_vid.mp4"></video>
 
-            <img id="NFT12" src="./Images/Amanece_SQ90_SH40_A_NFT_img03972.jpg" crossorigin="anonymous"/>
+            <img id="NFT12" src="./Images/Amanece_SQ90_SH40_A_NFT_img03972.jpg" crossorigin="anonymous" />
             <video id="Shot12" autoplay="false" loop="true" src="./Shots/Amanece_SQ90_SH40_A_NFT_vid.mp4"></video>
 
-            <img id="NFT13" src="./Images/Amanece_SQ90_SH180_A_NFT_img04131.jpg" crossorigin="anonymous"/>
+            <img id="NFT13" src="./Images/Amanece_SQ90_SH180_A_NFT_img04131.jpg" crossorigin="anonymous" />
             <video id="Shot13" autoplay="false" loop="true" src="./Shots/Amanece_SQ90_SH180_A_NFT_vid.mp4"></video>
 
-            <img id="NFT14" src="./Images/Amanece_SQ90_SH190_NFT_img04537.jpg" crossorigin="anonymous"/>
+            <img id="NFT14" src="./Images/Amanece_SQ90_SH190_NFT_img04537.jpg" crossorigin="anonymous" />
             <video id="Shot14" autoplay="false" loop="true" src="./Shots/Amanece_SQ90_SH190_NFT_vid.mp4"></video>
 
-            <img id="NFT15" src="./Images/Amanece_SQ100_SH50_NFT_img05278.jpg" crossorigin="anonymous"/>
+            <img id="NFT15" src="./Images/Amanece_SQ100_SH50_NFT_img05278.jpg" crossorigin="anonymous" />
             <video id="Shot15" autoplay="false" loop="true" src="./Shots/Amanece_SQ100_SH50_NFT_vid.mp4"></video>
 
-            <img id="NFT16" src="./Images/Amanece_SQ110_SH10_NFT_img05356.jpg" crossorigin="anonymous"/>
+            <img id="NFT16" src="./Images/Amanece_SQ110_SH10_NFT_img05356.jpg" crossorigin="anonymous" />
             <video id="Shot16" autoplay="false" loop="true" src="./Shots/Amanece_SQ110_SH10_NFT_vid.mp4"></video>
 
-            <img id="NFT17" src="./Images/Amanece_SQ110_SH20_NFT_img05406.jpg" crossorigin="anonymous"/>
+            <img id="NFT17" src="./Images/Amanece_SQ110_SH20_NFT_img05406.jpg" crossorigin="anonymous" />
             <video id="Shot17" autoplay="false" loop="true" src="./Shots/Amanece_SQ110_SH20_NFT_vid.mp4"></video>
 
-            <img id="NFT18" src="./Images/Amanece_SQ90_SH60_A_NFT_img05580.jpg" crossorigin="anonymous"/>
+            <img id="NFT18" src="./Images/Amanece_SQ90_SH60_A_NFT_img05580.jpg" crossorigin="anonymous" />
             <video id="Shot18" autoplay="false" loop="true" src="./Shots/Amanece_SQ90_SH60_A_NFT_vid.mp4"></video>
 
-            <img id="NFT19" src="./Images/Amanece_SQ110_SH80_NFT_img06052.jpg" crossorigin="anonymous"/>
+            <img id="NFT19" src="./Images/Amanece_SQ110_SH80_NFT_img06052.jpg" crossorigin="anonymous" />
             <video id="Shot19" autoplay="false" loop="true" src="./Shots/Amanece_SQ110_SH80_NFT_vid.mp4"></video>
 
-            <img id="NFT20" src="./Images/Amanece_SQ150_SH10_NFT_img10601.jpg" crossorigin="anonymous"/>
+            <img id="NFT20" src="./Images/Amanece_SQ150_SH10_NFT_img10601.jpg" crossorigin="anonymous" />
             <video id="Shot20" autoplay="false" loop="true" src="./Shots/Amanece_SQ150_SH10_NFT_vid.mp4"></video>
 
-            <img id="NFT21" src="./Images/Amanece_SQ160_SH10_NFT_img11064.jpg" crossorigin="anonymous"/>
+            <img id="NFT21" src="./Images/Amanece_SQ160_SH10_NFT_img11064.jpg" crossorigin="anonymous" />
             <video id="Shot21" autoplay="false" loop="true" src="./Shots/Amanece_SQ160_SH10_NFT_vid.mp4"></video>
 
-            <img id="NFT22" src="./Images/Amanece_SQ160_SH20_NFT_img11165.jpg" crossorigin="anonymous"/>
+            <img id="NFT22" src="./Images/Amanece_SQ160_SH20_NFT_img11165.jpg" crossorigin="anonymous" />
             <video id="Shot22" autoplay="false" loop="true" src="./Shots/Amanece_SQ160_SH20_NFT_vid.mp4"></video>
 
-            <img id="NFT23" src="./Images/Amanece_SQ170_SH10_NFT_img11441.jpg" crossorigin="anonymous"/>
+            <img id="NFT23" src="./Images/Amanece_SQ170_SH10_NFT_img11441.jpg" crossorigin="anonymous" />
             <video id="Shot23" autoplay="false" loop="true" src="./Shots/Amanece_SQ170_SH10_NFT_vid.mp4"></video>
 
-            <img id="NFT24" src="./Images/Amanece_SQ170_SH20_NFT_img13104.jpg" crossorigin="anonymous"/>
+            <img id="NFT24" src="./Images/Amanece_SQ170_SH20_NFT_img13104.jpg" crossorigin="anonymous" />
             <video id="Shot24" autoplay="false" loop="true" src="./Shots/Amanece_SQ170_SH20_NFT_vid.mp4"></video>
 
-            <img id="PlayButtonImg" src="./Images/play_border.png" crossorigin="anonymous"/>
-            <img id="PauseButtonImg" src="./Images/pause_border.png" crossorigin="anonymous"/>
-            <img id="InfoButtonImg" src="./Images/info_border.png" crossorigin="anonymous"/>
-            <img id="BuyButtonImg" src="./Images/buy_border.png" crossorigin="anonymous"/>
+            <img id="PlayButtonImg" src="./Images/play_border.png" crossorigin="anonymous" />
+            <img id="PauseButtonImg" src="./Images/pause_border.png" crossorigin="anonymous" />
+            <img id="InfoButtonImg" src="./Images/info_border.png" crossorigin="anonymous" />
+            <img id="BuyButtonImg" src="./Images/buy_border.png" crossorigin="anonymous" />
 
         </a-assets>
 
-        <a-camera look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
+        <a-camera look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
+            raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
         <a-entity mindar-image-target="targetIndex: 0">
             <a-plane src="#NFT1" id="frameImg1" height="1.1" width="2.6268" visible="true"></a-plane>
             <a-video src="#Shot1" id="frameVideo1" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame1" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="El humo negro y espeso, ese que pica en los ojos, apenas nos deja ver las máquinas que hemos creado para viajar al progreso y así perder el futuro." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="El humo negro y espeso, ese que pica en los ojos, apenas nos deja ver las máquinas que hemos creado para viajar al progreso y así perder el futuro."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="La Espera 1 - Frame 01039" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="La Espera 1 - Frame 01039" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton1" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton1" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton1" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton1" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton1" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton1" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton1" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton1" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 1">
@@ -112,14 +126,23 @@
             <a-video src="#Shot2" id="frameVideo2" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame2" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Observa el agua ¿Puedes verla? ¿Percibes su olor? ¿Dónde quedó el mar? ¿Dónde su fuerza? Hace tiempo que no soñamos con cantos de sirena..." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Observa el agua ¿Puedes verla? ¿Percibes su olor? ¿Dónde quedó el mar? ¿Dónde su fuerza? Hace tiempo que no soñamos con cantos de sirena..."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="La Espera 2 - Frame 01249" id="titleFrame2" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="La Espera 2 - Frame 01249" id="titleFrame2" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton2" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton2" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton2" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton2" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton2" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton2" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton2" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton2" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 2">
@@ -127,14 +150,23 @@
             <a-video src="#Shot3" id="frameVideo3" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame3" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Cae el sol en la larga espera, encayado el pecio, igual que el resto de vida y en su interior...la Muerte." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Cae el sol en la larga espera, encayado el pecio, igual que el resto de vida y en su interior...la Muerte."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="La Espera 3 - Frame 01330" id="titleFrame3" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="La Espera 3 - Frame 01330" id="titleFrame3" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton3" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton3" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton3" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton3" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton3" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton3" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton3" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton3" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 3">
@@ -142,14 +174,23 @@
             <a-video src="#Shot4" id="frameVideo4" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame4" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Cada vez menos luz, cada vez más sombra. La suave brisa que acompaña a la calma que precede a la tempestad." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Cada vez menos luz, cada vez más sombra. La suave brisa que acompaña a la calma que precede a la tempestad."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="La Espera 4 - Frame 01620" id="titleFrame4" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="La Espera 4 - Frame 01620" id="titleFrame4" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton4" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton4" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton4" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton4" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton4" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton4" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton4" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton4" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 4">
@@ -157,14 +198,23 @@
             <a-video src="#Shot5" id="frameVideo5" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame5" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Inhalar, exhalar. Intentarlo una vez más. Conseguirlo. Inhalar, exhalar. Ya casi no queda aire. Todos lo hemos notado. ¿Qué más podemos hacer? Intentarlo una vez más." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Inhalar, exhalar. Intentarlo una vez más. Conseguirlo. Inhalar, exhalar. Ya casi no queda aire. Todos lo hemos notado. ¿Qué más podemos hacer? Intentarlo una vez más."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="La Espera 5 - Frame 01621" id="titleFrame5" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="La Espera 5 - Frame 01621" id="titleFrame5" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton5" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton5" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton5" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton5" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton5" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton5" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton5" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton5" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 5">
@@ -172,14 +222,23 @@
             <a-video src="#Shot6" id="frameVideo6" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame6" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Mírame. Estoy cansado. Cargo en mis pupilas con la historia de todos aquellos que llegaron aquí antes que tú." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Mírame. Estoy cansado. Cargo en mis pupilas con la historia de todos aquellos que llegaron aquí antes que tú."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="La Espera 6 - Frame 01779" id="titleFrame6" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="La Espera 6 - Frame 01779" id="titleFrame6" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton6" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton6" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton6" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton6" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton6" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton6" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton6" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton6" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 6">
@@ -187,14 +246,23 @@
             <a-video src="#Shot7" id="frameVideo7" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame7" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Saldremos mejores dijeron. Nos lo repitieron una y otra vez. Puede que alguno lo creyera de verdad, pero nos cuesta tanto aprender ciertas lecciones..." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Saldremos mejores dijeron. Nos lo repitieron una y otra vez. Puede que alguno lo creyera de verdad, pero nos cuesta tanto aprender ciertas lecciones..."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="La Espera 11 - Frame 02251" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="La Espera 11 - Frame 02251" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton7" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton7" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton7" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton7" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton7" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton7" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton7" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton7" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 7">
@@ -202,14 +270,23 @@
             <a-video src="#Shot8" id="frameVideo8" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame8" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Has llegado a las tripas del océano, al principio de los tiempos. También al final. Donde todo se digiere a media luz." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Has llegado a las tripas del océano, al principio de los tiempos. También al final. Donde todo se digiere a media luz."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Muerte 1 - Frame 03399" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Muerte 1 - Frame 03399" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton8" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton8" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton8" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton8" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton8" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton8" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton8" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton8" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 8">
@@ -217,14 +294,23 @@
             <a-video src="#Shot9" id="frameVideo9" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame9" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Puede que conozcas los ojos de esa mujer, las manos de ese hombre, ojalá no sea así. Aquí han quedado atrapadas sus almas, su dolor y el sufrimiento de la humanidad." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Puede que conozcas los ojos de esa mujer, las manos de ese hombre, ojalá no sea así. Aquí han quedado atrapadas sus almas, su dolor y el sufrimiento de la humanidad."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Muerte 2 - Frame 03400" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Muerte 2 - Frame 03400" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton9" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton9" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton9" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton9" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton9" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton9" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton9" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton9" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 9">
@@ -232,14 +318,23 @@
             <a-video src="#Shot10" id="frameVideo10" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame10" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Suena acelerado el metal de los contadores. Giran y giran desde que existen las ganas de vivir y el miedo a morir. Y a veces al revés." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Suena acelerado el metal de los contadores. Giran y giran desde que existen las ganas de vivir y el miedo a morir. Y a veces al revés."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Muerte 3 - Frame 03595" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Muerte 3 - Frame 03595" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton10" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton10" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton10" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton10" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton10" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton10" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton10" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton10" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 10">
@@ -247,14 +342,23 @@
             <a-video src="#Shot11" id="frameVideo11" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame11" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Son raíces. No lo son. Son tentáculos. No lo son. ¿A quién protegen? ¿A quién alimentan? ¿Quién se esconde de nuestra mirada?" color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Son raíces. No lo son. Son tentáculos. No lo son. ¿A quién protegen? ¿A quién alimentan? ¿Quién se esconde de nuestra mirada?"
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Muerte 4 - Frame 03757" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Muerte 4 - Frame 03757" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton11" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton11" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton11" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton11" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton11" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton11" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton11" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton11" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 11">
@@ -262,14 +366,23 @@
             <a-video src="#Shot12" id="frameVideo12" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame12" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="La muerte. ¿Es como la imaginabas? ¿Sigue dándote miedo? ¿Y si fuera la única que puede ayudarte? ¿Cómo cambiaría eso tu historia?" color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="La muerte. ¿Es como la imaginabas? ¿Sigue dándote miedo? ¿Y si fuera la única que puede ayudarte? ¿Cómo cambiaría eso tu historia?"
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Muerte 5 - Frame 03972" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Muerte 5 - Frame 03972" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton12" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton12" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton12" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton12" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton12" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton12" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton12" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton12" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 12">
@@ -277,14 +390,23 @@
             <a-video src="#Shot13" id="frameVideo13" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame13" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="La Guerra. Siempre presente. En todas partes. El dolor. El terror. La guerra, una y otra vez, aunque nos cueste entender el porqué. Esta guerra, otra guerra, una vez más." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="La Guerra. Siempre presente. En todas partes. El dolor. El terror. La guerra, una y otra vez, aunque nos cueste entender el porqué. Esta guerra, otra guerra, una vez más."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Muerte 8 - Frame 04131" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Muerte 8 - Frame 04131" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton13" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton13" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton13" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton13" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton13" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton13" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton13" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton13" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 13">
@@ -292,14 +414,23 @@
             <a-video src="#Shot14" id="frameVideo14" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame14" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="La Peste. Esa que nos ha acompañado de cerca en los últimos años. Esa a la que hemos aprendido a temer. La que nos enciende y la que nos engaña." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="La Peste. Esa que nos ha acompañado de cerca en los últimos años. Esa a la que hemos aprendido a temer. La que nos enciende y la que nos engaña."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Peste 2 - Frame 04537" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Peste 2 - Frame 04537" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton14" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton14" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton14" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton14" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton14" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton14" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton14" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton14" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 14">
@@ -307,14 +438,23 @@
             <a-video src="#Shot15" id="frameVideo15" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame15" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Parece que todo muere con facilidad, se desvanece, se descompone. Aquí dentro la percepción del tiempo se ha roto y no se volverá a arreglar." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Parece que todo muere con facilidad, se desvanece, se descompone. Aquí dentro la percepción del tiempo se ha roto y no se volverá a arreglar."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Peste 3 - Frame 05278" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Peste 3 - Frame 05278" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton15" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton15" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton15" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton15" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton15" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton15" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton15" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton15" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 15">
@@ -322,14 +462,23 @@
             <a-video src="#Shot16" id="frameVideo16" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame16" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Las sonrisas del enemigo cabalgan hacia el horizonte. Siente el momento oscuro que acecha impúdico a que nos acerquemos sin que nadie nos obligue." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Las sonrisas del enemigo cabalgan hacia el horizonte. Siente el momento oscuro que acecha impúdico a que nos acerquemos sin que nadie nos obligue."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Peste 4 - Frame 05356" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Peste 4 - Frame 05356" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton16" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton16" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton16" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton16" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton16" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton16" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton16" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton16" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 16">
@@ -337,14 +486,23 @@
             <a-video src="#Shot17" id="frameVideo17" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame17" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Las consecuencias del poder marcadas en la piel. ¿Y qué más da? Hay que sobrevivir, perdurar. Nunca importó cómo." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Las consecuencias del poder marcadas en la piel. ¿Y qué más da? Hay que sobrevivir, perdurar. Nunca importó cómo."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Peste 5 - Frame 05406" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Peste 5 - Frame 05406" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton17" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton17" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton17" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton17" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton17" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton17" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton17" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton17" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 17">
@@ -352,14 +510,23 @@
             <a-video src="#Shot18" id="frameVideo18" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame18" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Mira a tu alrededor. Todo se ha parado. ¿Recuerdas? Inhala. Exhala. Sigue intentándolo. Es difícil digerir todo esto." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Mira a tu alrededor. Todo se ha parado. ¿Recuerdas? Inhala. Exhala. Sigue intentándolo. Es difícil digerir todo esto."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Peste 8 - Frame 05580" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Peste 8 - Frame 05580" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton18" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton18" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton18" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton18" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton18" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton18" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton18" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton18" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 18">
@@ -367,14 +534,23 @@
             <a-video src="#Shot19" id="frameVideo19" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame19" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Hambre. Solo faltas tú. Riéndote de nuestra incapacidad. Recordándonos una vez más que podemos evitarte, pero que los que podemos elegir dejamos que otros te abracen." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Hambre. Solo faltas tú. Riéndote de nuestra incapacidad. Recordándonos una vez más que podemos evitarte, pero que los que podemos elegir dejamos que otros te abracen."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Conversación de Hambre 2 - Frame 06052" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Conversación de Hambre 2 - Frame 06052" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton19" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton19" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton19" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton19" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton19" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton19" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton19" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton19" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 19">
@@ -382,14 +558,23 @@
             <a-video src="#Shot20" id="frameVideo20" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame20" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="El final; o el principio. Eso ya no importa. No hay nada que hacer. Se nos ha terminado el tiempo. O todo lo contrario." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="El final; o el principio. Eso ya no importa. No hay nada que hacer. Se nos ha terminado el tiempo. O todo lo contrario."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Desenlace 28 - Frame 10601" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Desenlace 28 - Frame 10601" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton20" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton20" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton20" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton20" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton20" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton20" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton20" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton20" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 20">
@@ -397,14 +582,23 @@
             <a-video src="#Shot21" id="frameVideo21" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame21" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="¿Oyes las campanas? Atiende, es el aviso. Parece bello, tranquilo, pero la paz nació quebrada y parece que es la primera vez que se deja ver." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="¿Oyes las campanas? Atiende, es el aviso. Parece bello, tranquilo, pero la paz nació quebrada y parece que es la primera vez que se deja ver."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Amanecer 1 - Frame 11064" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Amanecer 1 - Frame 11064" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton21" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton21" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton21" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton21" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton21" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton21" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton21" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton21" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 21">
@@ -412,14 +606,23 @@
             <a-video src="#Shot22" id="frameVideo22" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame22" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Hemos podido elegir a cada paso. Y parece que nunca hemos aprendido a caminar. No queda nada atrás y no quedará nada más adelante." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Hemos podido elegir a cada paso. Y parece que nunca hemos aprendido a caminar. No queda nada atrás y no quedará nada más adelante."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Amanecer 2 - Frame 11165" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Amanecer 2 - Frame 11165" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton22" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton22" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton22" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton22" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton22" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton22" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton22" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton22" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 22">
@@ -427,14 +630,23 @@
             <a-video src="#Shot23" id="frameVideo23" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame23" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="Azufre, calor y ruido, mucho ruido. Un ruido insoportable en todas partes. Ojalá nos inundara el silencio y el vacío. Ruido y nada más." color="black" align="center" width="2"></a-text>
+                <a-text
+                    value="Azufre, calor y ruido, mucho ruido. Un ruido insoportable en todas partes. Ojalá nos inundara el silencio y el vacío. Ruido y nada más."
+                    color="black" align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Amanecer 3 - Frame 11441" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Amanecer 3 - Frame 11441" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton23" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton23" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton23" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton23" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton23" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton23" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton23" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton23" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 23">
@@ -442,20 +654,31 @@
             <a-video src="#Shot24" id="frameVideo24" height="1.1" width="2.6268" visible="false"></a-video>
             <a-entity id="infoFrame24" visible="false" position="0 0 0.01">
                 <a-plane color="#7f7f7f" opacity="0.5" height="0.65" width="2"></a-plane>
-                <a-text value="El final del camino nos espera. ¿Y si esta era la última oportunidad?" color="black" align="center" width="2"></a-text>
+                <a-text value="El final del camino nos espera. ¿Y si esta era la última oportunidad?" color="black"
+                    align="center" width="2" font="./Fonts/OpenSans-Italic-msdf.json"
+                    font-image="./Fonts/OpenSans-Italic.png" negate="false"></a-text>
             </a-entity>
-            <a-text value="Amanecer 4 - Frame 13104" id="titleFrame1" color="black" align="left" width="2" position="-1.3 -0.65 0"></a-text>
+            <a-text value="Amanecer 4 - Frame 13104" id="titleFrame1" color="black" align="left" width="2"
+                position="-1.3 -0.65 0" font="./Fonts/Trattatello-msdf.json" font-image="./Fonts/Trattatello.png" negate="false">
+            </a-text>
             <a-entity position="1 -0.65 0">
-                <a-plane src="#InfoButtonImg" id="infoButton24" class="clickable" position="-0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#BuyButtonImg" id="buyButton24" class="clickable" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PlayButtonImg" id="playButton24" class="clickable" position="0.2 0 0" height="0.15" width="0.15" visible="true"></a-plane>
-                <a-plane src="#PauseButtonImg" id="pauseButton24" class="" position="0.2 0 0" height="0.15" width="0.15" visible="false"></a-plane>
+                <a-plane src="#InfoButtonImg" id="infoButton24" class="clickable" position="-0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#BuyButtonImg" id="buyButton24" class="clickable" height="0.15" width="0.15"
+                    visible="true"></a-plane>
+                <a-plane src="#PlayButtonImg" id="playButton24" class="clickable" position="0.2 0 0" height="0.15"
+                    width="0.15" visible="true"></a-plane>
+                <a-plane src="#PauseButtonImg" id="pauseButton24" class="" position="0.2 0 0" height="0.15" width="0.15"
+                    visible="false"></a-plane>
             </a-entity>
         </a-entity>
 
     </a-scene>
 
+    <!-- <img src="./Images/img_530011.png" id="changeCamera" onclick="changeCamera()" class="overlay" /> -->
+
     <script src="buttonsClick.js"></script>
 
-  </body>
+</body>
+
 </html>

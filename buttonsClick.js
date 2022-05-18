@@ -1,3 +1,9 @@
+/*
+function changeCamera(){
+    console.log("chagne");
+}
+*/
+
 const infoButton1 = document.querySelector('#infoButton1');
 const buyButton1 = document.querySelector('#buyButton1');
 const playButton1 = document.querySelector('#playButton1');
